@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <title>Index</title>
+    <link rel="stylesheet" href="./../node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/compiler/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./../index.html">Navbar</a>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                
+              </ul>
+    
+              <form class="form-inline mr-2 my-lg-0">
+                <a href="./../login/login.html" class="btn btn-light">Login</a>
+              </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- FORM -->
+    <h1 class="display-4 text-center mt-5 text-dark">Cadastre-se<br></h1>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 text-left mt-5">
+                <div class="card" style="width: center;">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Nome completo</label>
+                                <input type="name" class="form-control" placeholder="Seu nome">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Endereço de email</label>
+                                <input type="email" class="form-control" aria-describedby="emailHelp"
+                                    placeholder="Seu email">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <input type="password" class="form-control" placeholder="Senha">
+                            </div>
+
+                            <div class="form-group">
+                                <label>CPF completo</label>
+                                <input ui-mask="999.999.999-99" type="number" class="form-control"
+                                    placeholder="___.___.___-__">
+                            </div>
+
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Concordo com os <a
+                                        href="#">Termos</a> e
+                                    <a href="#">Condições</a> de uso</label>
+                            </div>
+                            <a href="./../PaginaPagamento/paginaPag.html" class="btn btn-dark">Enviar</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./../node_modules/jquery/dist/jquery.js"></script>
+    <script src="./../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
