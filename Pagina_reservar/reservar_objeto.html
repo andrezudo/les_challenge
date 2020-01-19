@@ -96,6 +96,49 @@
           </table>
         </div>
       </div>
+
+      <!--Modal Atividade-->
+      <div class="modal fade" id="exampleModal" tabindex="1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h4 class="modal-title">Reservar Objeto</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+
+            </div>
+
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <div class="form-group">
+                    <label>Data</label>
+                    <input type="date" class="form-control" placeholder="dd/mm/aaaa" required="required">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Horário de início</label>
+                      <input type="time" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Horário de término</label>
+                      <input type="time" class="form-control" id="inputPassword4">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-success">Reservar</button>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <script src="./../node_modules/jquery/dist/jquery.js"></script>
