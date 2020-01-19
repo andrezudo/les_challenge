@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SysReservas - Reservar Objeto</title>
+    <link rel="stylesheet" href="./../node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/compiler/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="./../pagina_usuario/Pagina_inicial.html">SysReservas</a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="./../Pagina_reservar/reservar_local.html">Locais <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./../Pagina_reservar/reservar_objeto.html">Objetos <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Minhas Reservas <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+
+          <form class="form-inline mr-2">
+            <a href="./../index.html" class="btn btn-light">Sair</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center my-3">
+          <h2>Reservar Objeto</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center my-5">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Objeto</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Datashow</td>
+                <td>10</td>
+                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                  Reservar
+                </button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Apagador</td>
+                <td>25</td>
+                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                  Reservar
+                </button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Pincel</td>
+                <td>39</td>
+                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                  Reservar
+                </button></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Quadro Branco</td>
+                <td>5</td>
+                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                  Reservar
+                </button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../node_modules/jquery/dist/jquery.js"></script>
+    <script src="./../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://github.com/AndreLuis6"> André Luís</a>
+    </div>
+    
+</footer>
+<!-- Footer -->
+
+</html>
