@@ -39,7 +39,202 @@
       </div>
     </nav>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center my-3">
+          <h2>Locais Reservados</h2>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center my-5">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Local</th>
+                <th scope="col">Data</th>
+                <th scope="col">Horário</th>
+                <th scope="col">Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Auditório</td>
+                <td>10/02/2020</td>
+                <td>14:00 ás 18:00</td>
+                <td><button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#modalLocal">
+                    Editar
+                  </button><button type="button" class="btn btn-danger mr-2" data-toggle="modal" data-target="#exampleModal">
+                    Cancelar
+                  </button></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Laboratório</td>
+                <td>19/02/2020</td>
+                <td>08:00 ás 12:00</td>
+                <td><button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#modalLocal">
+                    Editar
+                  </button><button type="button" class="btn btn-danger mr-2" data-toggle="modal" data-target="#exampleModal">
+                    Cancelar
+                  </button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center my-3">
+            <h2>Objetos Reservados</h2>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center my-5">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Objeto</th>
+                  <th scope="col">Data</th>
+                  <th scope="col">Horário</th>
+                  <th scope="col">Ação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Datashow</td>
+                  <td>10/02/2020</td>
+                  <td>14:00 ás 18:00</td>
+                  <td><button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#modalObjeto">
+                      Editar
+                    </button><button type="button" class="btn btn-danger mr-2" data-toggle="modal" data-target="#exampleModal">
+                      Cancelar
+                    </button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Apagador</td>
+                  <td>10/02/2020</td>
+                  <td>14:00 ás 18:00</td>
+                  <td><button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#modalObjeto">
+                      Editar
+                    </button><button type="button" class="btn btn-danger mr-2" data-toggle="modal" data-target="#exampleModal">
+                      Cancelar
+                    </button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Quadro Branco</td>
+                  <td>28/01/2020</td>
+                  <td>18:00 ás 20:00</td>
+                  <td><button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#modalObjeto">
+                      Editar
+                    </button><button type="button" class="btn btn-danger mr-2" data-toggle="modal" data-target="#exampleModal">
+                      Cancelar
+                    </button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!--Modal Objeto-->
+        <div class="modal fade" id="modalObjeto" tabindex="1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h4 class="modal-title">Atualizar reserva de Objeto</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+
+              </div>
+
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <div class="form-group">
+                      <label>Data</label>
+                      <input type="date" class="form-control" placeholder="dd/mm/aaaa" required="required">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Horário de início</label>
+                        <input type="time" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Horário de término</label>
+                        <input type="time" class="form-control" id="inputPassword4">
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Modal Local-->
+      <div class="modal fade" id="modalLocal" tabindex="1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h4 class="modal-title">Atualizar reserva de Local</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+
+            </div>
+
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <div class="form-group">
+                    <label>Data</label>
+                    <input type="date" class="form-control" placeholder="dd/mm/aaaa" required="required">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Horário de início</label>
+                      <input type="time" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Horário de término</label>
+                      <input type="time" class="form-control" id="inputPassword4">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-success">Confirmar</button>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
     <script src="./../node_modules/jquery/dist/jquery.js"></script>
     <script src="./../node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="./../node_modules/bootstrap/dist/js/bootstrap.js"></script>
